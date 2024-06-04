@@ -4,12 +4,18 @@ import { FiSunrise, FiSunset } from "react-icons/fi";
 import { IoWaterOutline } from "react-icons/io5";
 import { FaTemperatureHigh } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const CitiesPreview = () => {
   return (
     <section className={classes.citiesPreview} id="popularCities">
       <span className={classes.Article}>Popular cities</span>
-      <div className={classes.citiesContent}>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className={classes.citiesContent}
+      >
         <Link to={"/city"} className={classes.blockOfCity}>
           <div className={classes.upperPart}>
             <SunOutlined className={classes.status} />
@@ -50,6 +56,7 @@ const CitiesPreview = () => {
             </div>
           </div>
         </Link>
+
         <Link to={"/city"} className={classes.blockOfCity}>
           <div className={classes.upperPart}>
             <SunOutlined className={classes.status} />
@@ -130,7 +137,7 @@ const CitiesPreview = () => {
             </div>
           </div>
         </Link>
-      </div>
+      </motion.div>
     </section>
   );
 };

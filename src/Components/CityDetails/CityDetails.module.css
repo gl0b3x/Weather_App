@@ -36,6 +36,7 @@
   justify-content: center;
   gap: 25px;
   text-align: center;
+  animation: slideInFromLeft 1s ease;
 }
 
 .searchInput {
@@ -139,6 +140,7 @@
   align-items: center;
   justify-content: center;
   gap: 25px;
+  animation: slideInFromRight 1s ease;
 }
 
 .Temperature {
@@ -509,5 +511,23 @@
 @media (min-width: 1400px) {
   .cityWrapperBlur {
     padding: 0 14vw;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }

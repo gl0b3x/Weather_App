@@ -28,8 +28,8 @@
 .blockOfCity {
   width: 30%;
   height: 100%;
-  border-radius: 14px;
   box-shadow: 0 0 10px 5px rgba(var(--backgroundReverse), 0.3);
+  border-radius: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;

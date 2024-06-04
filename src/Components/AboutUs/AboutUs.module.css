@@ -4,7 +4,8 @@
 }
 
 .backgroundVideo {
-  position: absolute;
+  pointer-events: none;
+  position: fixed;
   top: 50%;
   left: 50%;
   width: 100%;

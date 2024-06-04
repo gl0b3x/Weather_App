@@ -1,4 +1,5 @@
 import classes from "./AboutUs.module.css";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
@@ -30,7 +31,12 @@ const AboutUs = () => {
         <source src="/videos/rain.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className={classes.contentWrapper}>
+      <motion.div
+        initial={{ y: -200 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 1 }}
+        className={classes.contentWrapper}
+      >
         <p className={classes.Article}>About Us</p>
         <div className={classes.content}>
           <p>
@@ -60,7 +66,7 @@ const AboutUs = () => {
             for whatever the weather brings.
           </p>
         </div>
-      </div>
+      </motion.div>
       <div className="custom-shape-divider-bottom">
         <svg
           data-name="Layer 1"
