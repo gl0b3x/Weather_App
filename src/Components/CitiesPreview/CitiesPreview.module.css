@@ -1,0 +1,305 @@
+.citiesPreview {
+  background-color: rgb(var(--background));
+  color: rgb(var(--textColor));
+  padding: 0 14vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Article {
+  font-size: clamp(
+    var(--min-article-size),
+    var(--preferred-article-size),
+    var(--max-article-size)
+  );
+  font-weight: 700;
+}
+
+.citiesContent {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.blockOfCity {
+  width: 30%;
+  height: 100%;
+  border-radius: 14px;
+  box-shadow: 0 0 10px 5px rgba(var(--backgroundReverse), 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upperPart {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  align-items: center;
+  height: 40%;
+}
+
+.nameCityAndStatus {
+  display: flex;
+  flex-direction: column;
+}
+
+.nameCityAndStatus span {
+  font-size: clamp(
+    var(--min-text-size),
+    var(--preferred-text-size),
+    var(--max-text-size)
+  );
+  font-weight: 700;
+}
+
+.temperature,
+.status svg {
+  font-size: clamp(
+    var(--min-article-size),
+    var(--preferred-article-size),
+    var(--max-article-size)
+  );
+}
+
+.bottomPart {
+  height: 50%;
+  width: 85%;
+  border-radius: 24px;
+  box-shadow: 0 0 10px 5px rgba(var(--backgroundReverse), 0.1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+.bottomPart div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.iconBottomPart {
+  font-size: 24px;
+}
+
+.bottomPart div div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0;
+}
+
+.bottomPart div div span {
+  font-size: 18px;
+}
+
+@media (max-width: 479px) {
+  .citiesPreview {
+    padding: 2vh 8vw;
+    gap: 4vh;
+    height: 100vh;
+  }
+  .citiesContent {
+    flex-direction: column;
+    gap: 4vh;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .Article {
+    width: 100%;
+    text-align: center;
+  }
+  .blockOfCity {
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .upperPart {
+    gap: 5vw;
+  }
+  .bottomPart {
+    width: 90%;
+  }
+  .iconBottomPart {
+    font-size: 14px;
+  }
+  .bottomPart div div span {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .citiesPreview {
+    padding: 2vh 8vw;
+    gap: 4vh;
+    height: 100vh;
+  }
+  .citiesContent {
+    flex-direction: column;
+    gap: 4vh;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .Article {
+    width: 100%;
+    text-align: center;
+  }
+  .blockOfCity {
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .upperPart {
+    gap: 5vw;
+  }
+  .bottomPart {
+    width: 90%;
+  }
+  .iconBottomPart {
+    font-size: 14px;
+  }
+  .bottomPart div div span {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .citiesPreview {
+    padding: 2vh 8vw;
+    gap: 4vh;
+    height: 100vh;
+  }
+  .citiesContent {
+    flex-direction: column;
+    gap: 4vh;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .Article {
+    width: 100%;
+    text-align: center;
+  }
+  .blockOfCity {
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .upperPart {
+    gap: 5vw;
+  }
+  .bottomPart {
+    width: 90%;
+  }
+  .iconBottomPart {
+    font-size: 14px;
+  }
+  .bottomPart div div span {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .citiesPreview {
+    padding: 2vh 10vw;
+    gap: 4vh;
+    height: 40vh;
+  }
+  .citiesContent {
+    gap: 3vw;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .Article {
+    width: 100%;
+    text-align: center;
+  }
+  .blockOfCity {
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottomPart {
+    width: 90%;
+  }
+  .iconBottomPart {
+    font-size: 16px;
+  }
+  .bottomPart div div span {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .citiesPreview {
+    padding: 2vh 14vw;
+    gap: 4vh;
+    height: 50vh;
+  }
+  .citiesContent {
+    gap: 2vh;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+  }
+  .Article {
+    width: 100%;
+    text-align: center;
+  }
+  .blockOfCity {
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottomPart {
+    width: 90%;
+  }
+  .iconBottomPart {
+    font-size: 16px;
+  }
+  .bottomPart div div span {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .citiesPreview {
+    padding: 2vh 14vw;
+    gap: 4vh;
+    height: 60vh;
+  }
+  .citiesContent {
+    gap: 2vh;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+  }
+  .Article {
+    width: 100%;
+    text-align: center;
+  }
+  .blockOfCity {
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottomPart {
+    width: 90%;
+  }
+}
