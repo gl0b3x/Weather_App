@@ -10,7 +10,8 @@ import { Link } from "react-router-dom";
 const CitySearch = () => {
   return (
     <main className={classes.CitySearchComponent}>
-      <div className={classes.CitySearchContent} id="city-search">
+      <div className={classes.citySearchContentWrapper}>
+       <div className={classes.CitySearchContent} id="city-search">
         <section className={classes.leftBlock}>
           <article className={classes.Article}>
             Discover the weather in your city
@@ -109,6 +110,7 @@ const CitySearch = () => {
             className="shape-fill"
           ></path>
         </svg>
+       </div>
       </div>
     </main>
   );
