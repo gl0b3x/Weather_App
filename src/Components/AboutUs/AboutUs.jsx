@@ -44,7 +44,7 @@ const AboutUs = () => {
               className={classes.content}
           >
             <motion.p
-                initial={{x: 400, opacity: 0}}
+                initial={{x: 200, opacity: 0}}
                 whileInView={{x: 0, opacity: 1}}
                 viewport={{once: true}}
                 transition={{duration: 1.5}}
@@ -57,7 +57,7 @@ const AboutUs = () => {
               to our users across the globe.
             </motion.p>
             <motion.p
-                initial={{x: 400, opacity: 0}}
+                initial={{x: 200, opacity: 0}}
                 whileInView={{x: 0, opacity: 1}}
                 viewport={{once: true}}
                 transition={{duration: 1.5}}
@@ -71,7 +71,7 @@ const AboutUs = () => {
               that our users receive the highest quality weather information.
             </motion.p>
             <motion.p
-                initial={{x: 400, opacity: 0}}
+                initial={{x: 200, opacity: 0}}
                 whileInView={{x: 0, opacity: 1}}
                 viewport={{once: true}}
                 transition={{duration: 1.5}}
