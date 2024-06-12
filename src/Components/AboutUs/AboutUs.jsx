@@ -27,9 +27,8 @@ const AboutUs = () => {
           ></path>
         </svg>
       </div>
-      <video autoPlay muted loop className={classes.backgroundVideo}>
+      <video autoPlay muted loop playsInline className={classes.backgroundVideo}>
         <source src="/videos/rain.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
       </video>
       <div className={classes.contentWrapper}>
         <motion.p
