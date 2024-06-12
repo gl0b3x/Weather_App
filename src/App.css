@@ -17,6 +17,9 @@
   --max-header-size: 24px;
 
   --backgroundImage: url("/images/backgroundSearchCity.webp");
+
+
+  overscroll-behavior-y: none;
 }
 
 * {
