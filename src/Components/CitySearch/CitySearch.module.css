@@ -12,6 +12,7 @@
   background: rgba(var(--background), 0.8);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  position: relative;
 }
 
 .CitySearchContent {
@@ -21,7 +22,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 
 .leftBlock,
