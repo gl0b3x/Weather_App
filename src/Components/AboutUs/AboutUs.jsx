@@ -31,47 +31,66 @@ const AboutUs = () => {
         <source src="/videos/rain.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <motion.div
-        initial={{ y: -200 }}
-        whileInView={{ y: 0 }}
-        transition={{ duration: 1 }}
-        className={classes.contentWrapper}
-      >
-        <p className={classes.Article}>About Us</p>
-        <div className={classes.content}>
-          <p>
-            Founded in 2019, Weather App was created by a team of passionate
-            meteorologists, data scientists, and technology enthusiasts. We
-            recognized the need for a weather service that combines scientific
-            expertise with user-friendly technology. Since our inception, we
-            have been committed to delivering precise weather data and insights
-            to our users across the globe.
-          </p>
-          <p>
-            We utilize state-of-the-art technology and advanced meteorological
-            models to provide the most accurate weather forecasts. Our data is
-            sourced from reputable organizations such as the National Weather
-            Service (NWS), European Centre for Medium-Range Weather Forecasts
-            (ECMWF), and other leading meteorological institutions. By
-            integrating cutting-edge technology with expert analysis, we ensure
-            that our users receive the highest quality weather information.
-          </p>
-          <p>
-            At Weather App, we are dedicated to continuous improvement and
-            innovation. We strive to enhance our services and expand our
-            offerings to meet the evolving needs of our users. Your feedback is
-            invaluable to us, and we welcome your suggestions to help us serve
-            you better. Thank you for choosing Weather App as your trusted
-            weather source. We look forward to keeping you informed and prepared
-            for whatever the weather brings.
-          </p>
+      <div className={classes.contentWrapper}>
+        <motion.p
+            initial={{y: -50}}
+            whileInView={{y: 0}}
+            transition={{duration: 1}}
+            viewport={{ once: true }}
+            className={classes.Article}>
+          About Us
+        </motion.p>
+          <div
+              className={classes.content}
+          >
+            <motion.p
+                initial={{x: 400, opacity: 0}}
+                whileInView={{x: 0, opacity: 1}}
+                viewport={{once: true}}
+                transition={{duration: 1.5}}
+            >
+              Founded in 2019, Weather App was created by a team of passionate
+              meteorologists, data scientists, and technology enthusiasts. We
+              recognized the need for a weather service that combines scientific
+              expertise with user-friendly technology. Since our inception, we
+              have been committed to delivering precise weather data and insights
+              to our users across the globe.
+            </motion.p>
+            <motion.p
+                initial={{x: 400, opacity: 0}}
+                whileInView={{x: 0, opacity: 1}}
+                viewport={{once: true}}
+                transition={{duration: 1.5}}
+            >
+              We utilize state-of-the-art technology and advanced meteorological
+              models to provide the most accurate weather forecasts. Our data is
+              sourced from reputable organizations such as the National Weather
+              Service (NWS), European Centre for Medium-Range Weather Forecasts
+              (ECMWF), and other leading meteorological institutions. By
+              integrating cutting-edge technology with expert analysis, we ensure
+              that our users receive the highest quality weather information.
+            </motion.p>
+            <motion.p
+                initial={{x: 400, opacity: 0}}
+                whileInView={{x: 0, opacity: 1}}
+                viewport={{once: true}}
+                transition={{duration: 1.5}}
+            >
+              At Weather App, we are dedicated to continuous improvement and
+              innovation. We strive to enhance our services and expand our
+              offerings to meet the evolving needs of our users. Your feedback is
+              invaluable to us, and we welcome your suggestions to help us serve
+              you better. Thank you for choosing Weather App as your trusted
+              weather source. We look forward to keeping you informed and prepared
+              for whatever the weather brings.
+            </motion.p>
         </div>
-      </motion.div>
+      </div>
       <div className="custom-shape-divider-bottom">
         <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
           preserveAspectRatio="none"
         >
           <path
